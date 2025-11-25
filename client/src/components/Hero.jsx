@@ -10,8 +10,13 @@ export function Hero() {
   return (
     <header id="home" className="hero">
       <div className="hero-bg-elements">
-        <img src="/grad_hat.png" alt="" className="hero-grad-hat" />
+        <img src="/grad_hat2.png" alt="" className="hero-grad-hat" />
         <div className="hero-grid-bg"></div>
+        <div className="snow-container">
+          {[...Array(50)].map((_, i) => (
+            <div key={i} className={`snowflake snowflake-${(i % 5) + 1}`}>❄</div>
+          ))}
+        </div>
       </div>
       <div className="container hero-content">
         <div className="hero-main">
@@ -20,8 +25,8 @@ export function Hero() {
             <span>Premium Academic Writing Services</span>
           </div>
           <h1 className="hero-title">
-            Transform Your
-            <span className="hero-title-accent"> Academic Journey</span>
+            <span className="hero-title-main">Transform Your</span>
+            <span className="hero-title-accent typewriter"> Academic Journey</span>
           </h1>
           <p className="hero-description">
             Stressed about assignments? Let us help! Our expert writers deliver high-quality, custom assignments tailored to you. Save time and succeed - contact us today!
