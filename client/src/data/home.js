@@ -1,12 +1,12 @@
 // Import local images
-import image1 from '../images/web1.png';
-import image2 from '../images/web2.png';
-import image3 from '../images/web3.png';
-import image4 from '../images/web4.png';
-import image5 from '../images/web5.png';
-import image6 from '../images/web6.png';
-import image7 from '../images/web7.png';
-import image8 from '../images/web8.png';
+import image1 from '../assets/web1.png';
+import image2 from '../assets/web2.png';
+import image3 from '../assets/web3.png';
+import image4 from '../assets/web4.png';
+import image5 from '../assets/web5.png';
+import image6 from '../assets/web6.png';
+import image7 from '../assets/web7.png';
+import image8 from '../assets/web8.png';
 
 export const services = [
   { id: 1, title: 'Assignments', desc: 'Reliable assignment help with clear, well-structured, and original content tailored to your needs.' },
@@ -65,7 +65,7 @@ export const reviews = [
     name: 'James W.', 
     role: 'Law Student', 
     text: 'Complex legal analysis made simple. Their expertise in academic writing really shows in the final product.',
-    image: image6, // Reusing first image for 6th review since you have 5 images
+    image: image6, 
     rating: 5,
     project: 'Constitutional Law Essay'
   },
@@ -74,7 +74,7 @@ export const reviews = [
     name: 'James W.', 
     role: 'Law Student', 
     text: 'Complex legal analysis made simple. Their expertise in academic writing really shows in the final product.',
-    image: image7, // Reusing first image for 6th review since you have 5 images
+    image: image7, 
     rating: 5,
     project: 'Constitutional Law Essay'
   },
@@ -83,7 +83,7 @@ export const reviews = [
     name: 'James W.', 
     role: 'Law Student', 
     text: 'Complex legal analysis made simple. Their expertise in academic writing really shows in the final product.',
-    image: image8, // Reusing first image for 6th review since you have 5 images
+    image: image8, 
     rating: 5,
     project: 'Constitutional Law Essay'
   },
