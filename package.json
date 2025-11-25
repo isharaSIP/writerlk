@@ -1,0 +1,10 @@
+{
+  "name": "writerlk",
+  "private": true,
+  "workspaces": ["server", "client", "shared"],
+  "scripts": {
+    "server": "npm run -w server dev",
+    "client": "npm run -w client dev",
+    "start": "npm run -w server dev"
+  }
+}
