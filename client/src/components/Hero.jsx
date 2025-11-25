@@ -25,8 +25,8 @@ export function Hero() {
             <span>Premium Academic Writing Services</span>
           </div>
           <h1 className="hero-title">
-            <span className="hero-title-main">Transform Your</span>
-            <span className="hero-title-accent typewriter"> Academic Journey</span>
+            Transform Your
+            <span className="hero-title-accent"> Academic Journey</span>
           </h1>
           <p className="hero-description">
             Stressed about assignments? Let us help! Our expert writers deliver high-quality, custom assignments tailored to you. Save time and succeed - contact us today!

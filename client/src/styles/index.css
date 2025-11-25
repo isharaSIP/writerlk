@@ -188,53 +188,11 @@ h1, h2, h3 { font-weight: 600; letter-spacing: -0.5px; }
   letter-spacing: -0.02em;
 }
 
-.hero-title-main {
-  display: block;
-  opacity: 0;
-  animation: fadeInUp 0.8s ease-out 0.5s forwards;
-}
-
 .hero-title-accent { 
   background: var(--grad-accent); 
   -webkit-background-clip: text; 
   color: transparent; 
   display: inline-block;
-}
-
-.typewriter {
-  overflow: hidden;
-  border-right: 3px solid var(--color-accent);
-  white-space: nowrap;
-  width: 0;
-  animation: 
-    typing 2s steps(17) 1.5s forwards,
-    blink 0.8s infinite 1.5s,
-    stopBlink 0.1s 3.5s forwards;
-}
-
-@keyframes fadeInUp {
-  0% {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes typing {
-  0% { width: 0; }
-  100% { width: 17ch; }
-}
-
-@keyframes blink {
-  0%, 50% { border-color: var(--color-accent); }
-  51%, 100% { border-color: transparent; }
-}
-
-@keyframes stopBlink {
-  100% { border-color: transparent; }
 }
 
 .hero-description { 
