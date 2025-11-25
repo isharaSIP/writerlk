@@ -11,7 +11,7 @@ export function Navigation() {
       <div className="container nav-container">
         <div className="nav-brand">
           <a href="#home" className="brand-link">
-            <img src="/src/images/logo1.png" alt="Writer.lk Logo" className="nav-logo" />
+            <img src="/src/assets/logo1.png" alt="Writer.lk Logo" className="nav-logo" />
             Writer.lk
           </a>
         </div>
