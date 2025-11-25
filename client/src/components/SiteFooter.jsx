@@ -5,7 +5,7 @@ export function SiteFooter() {
         <div className="cols">
           <div>
             <div style={{display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '0.5rem'}}>
-              <img src="/src/images/logo1.png" alt="Writer.lk Logo" style={{height: '50px', width: 'auto'}} />
+              <img src="/logo1.png" alt="Writer.lk Logo" style={{height: '50px', width: 'auto'}} />
               <h3 style={{margin: 0}}>Writer.lk</h3>
             </div>
             <p style={{fontSize:'.8rem',maxWidth:'38ch',lineHeight:'1.4'}}>Academic assignment & writing assistance focused on clarity, originality and structured delivery.</p>

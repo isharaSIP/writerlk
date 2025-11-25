@@ -6,10 +6,11 @@ export function Hero() {
     window.open(whatsappURL, '_blank');
   };
 
+  
   return (
     <header id="home" className="hero">
       <div className="hero-bg-elements">
-        <img src="/src/public/grad_hat.png" alt="" className="hero-grad-hat" />
+        <img src="/grad_hat.png" alt="" className="hero-grad-hat" />
         <div className="hero-grid-bg"></div>
       </div>
       <div className="container hero-content">

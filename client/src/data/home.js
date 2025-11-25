@@ -1,12 +1,12 @@
-// Import local images
-import image1 from '../public/web1.png';
-import image2 from '../public/web2.png';
-import image3 from '../public/web3.png';
-import image4 from '../public/web4.png';
-import image5 from '../public/web5.png';
-import image6 from '../public/web6.png';
-import image7 from '../public/web7.png';
-import image8 from '../public/web8.png';
+// Use public folder images for production
+const image1 = '/web1.png';
+const image2 = '/web2.png';
+const image3 = '/web3.png';
+const image4 = '/web4.png';
+const image5 = '/web5.png';
+const image6 = '/web6.png';
+const image7 = '/web7.png';
+const image8 = '/web8.png';
 
 export const services = [
   { id: 1, title: 'Assignments', desc: 'Reliable assignment help with clear, well-structured, and original content tailored to your needs.' },
