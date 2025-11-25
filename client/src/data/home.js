@@ -1,12 +1,12 @@
 // Import local images
-import image1 from '../assets/web1.png';
-import image2 from '../assets/web2.png';
-import image3 from '../assets/web3.png';
-import image4 from '../assets/web4.png';
-import image5 from '../assets/web5.png';
-import image6 from '../assets/web6.png';
-import image7 from '../assets/web7.png';
-import image8 from '../assets/web8.png';
+import image1 from '../public/web1.png';
+import image2 from '../public/web2.png';
+import image3 from '../public/web3.png';
+import image4 from '../public/web4.png';
+import image5 from '../public/web5.png';
+import image6 from '../public/web6.png';
+import image7 from '../public/web7.png';
+import image8 from '../public/web8.png';
 
 export const services = [
   { id: 1, title: 'Assignments', desc: 'Reliable assignment help with clear, well-structured, and original content tailored to your needs.' },
