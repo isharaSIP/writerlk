@@ -14,10 +14,10 @@ export function SiteFooter() {
           <div>
             <h3>Services</h3>
             <nav style={{display:'grid',gap:'.4rem'}}>
-              <a href="#services">Assignments</a>
-              <a href="#services">Editing</a>
-              <a href="#services">Formatting</a>
-              <a href="#services">Slides</a>
+              <a>Assignments</a>
+              <a>Presentations</a>
+              <a>Professional CV</a>
+              <a>Type Settings</a>
             </nav>
           </div>
           <div>

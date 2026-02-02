@@ -89,6 +89,7 @@ h1, h2, h3 { font-weight: 600; letter-spacing: -0.5px; }
   pointer-events: none;
   overflow: hidden;
   z-index: 1;
+  display: none !important;
 }
 
 .snowflake {
