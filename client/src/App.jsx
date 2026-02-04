@@ -5,6 +5,7 @@ import { Stats } from './components/Stats.jsx';
 import { Reviews } from './components/Reviews.jsx';
 import { SiteFooter } from './components/SiteFooter.jsx';
 import { WhatsAppFloat } from './components/WhatsAppFloat.jsx';
+import { WelcomePopup } from './components/WelcomePopup.jsx';
 
 export default function App() {
   return (
@@ -16,6 +17,7 @@ export default function App() {
       <Reviews />
       <SiteFooter />
       <WhatsAppFloat />
+      <WelcomePopup />
     </>
   );
 }
