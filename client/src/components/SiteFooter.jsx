@@ -55,7 +55,7 @@ export function SiteFooter() {
               </div>
               <div className="footer-contact-item">
                 <div className="footer-contact-icon">📍</div>
-                <span>Colombo, Sri Lanka</span>
+                <span>Malabe, Sri Lanka</span>
               </div>
             </div>
           </div>
