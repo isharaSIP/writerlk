@@ -3,6 +3,7 @@ import { Hero } from './components/Hero.jsx';
 import { Services } from './components/Services.jsx';
 import { Stats } from './components/Stats.jsx';
 import { Reviews } from './components/Reviews.jsx';
+import { ContactSection } from './components/ContactSection.jsx';
 import { SiteFooter } from './components/SiteFooter.jsx';
 import { WhatsAppFloat } from './components/WhatsAppFloat.jsx';
 import { WelcomePopup } from './components/WelcomePopup.jsx';
@@ -17,6 +18,7 @@ export default function App() {
       <Services />
       <Stats />
       <Reviews />
+      <ContactSection />
       <SiteFooter />
       <WhatsAppFloat />
       <WelcomePopup />

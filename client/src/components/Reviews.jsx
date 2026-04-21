@@ -1,67 +1,94 @@
-import { reviews } from '../data/home.js';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 export function Reviews() {
+  const images = [
+    '/web1.png', '/web2.png', '/web3.png', '/web4.png',
+    '/web5.png', '/web6.png', '/web7.png', '/web8.png'
+  ];
+
+  const [currentPage, setCurrentPage] = useState(1);
   const [selectedImage, setSelectedImage] = useState(null);
+  const imagesPerPage = 4;
 
-  const openPopup = (review) => {
-    setSelectedImage(review);
-  };
+  const totalPages = Math.ceil(images.length / imagesPerPage);
 
-  const closePopup = () => {
-    setSelectedImage(null);
-  };
+  // Auto-pagination logic
+  useEffect(() => {
+    if (selectedImage) return; // Don't move if user is looking at an image
+    
+    const timer = setInterval(() => {
+      setCurrentPage(prev => (prev === totalPages ? 1 : prev + 1));
+    }, 5000); // Switch every 5 seconds
+
+    return () => clearInterval(timer);
+  }, [totalPages, selectedImage]);
+  const indexOfLastImage = currentPage * imagesPerPage;
+  const indexOfFirstImage = indexOfLastImage - imagesPerPage;
+  const currentImages = images.slice(indexOfFirstImage, indexOfLastImage);
+
+  const openPopup = (img) => setSelectedImage(img);
+  const closePopup = () => setSelectedImage(null);
 
   return (
-    <section id="reviews">
+    <section id="reviews" className="reviews-section">
       <div className="container">
-        <h1 className="reveal reveal-up"><center><b>Client Feedbacks</b></center></h1>
+        <div className="section-header reveal reveal-up">
+          <h2 className="section-title">Client <span className="text-accent">Feedbacks</span></h2>
+          <p className="section-subtitle">Real results from our students. Tap on any image to view the full feedback.</p>
+        </div>
         
-        <div className="reviews-scroll-container reveal reveal-up delay-1">
-          <div className="reviews-scroll-track">
-            {[...reviews, ...reviews].map((r, index) => (
-              <article key={`${r.id}-${index}`} className="review-card-scroll">
-                <div className="review-image-container" onClick={() => openPopup(r)}>
-                  <img 
-                    src={r.image} 
-                    alt={`Client review ${r.id}`} 
-                    className="review-image"
-                    onError={(e) => {
-                      e.target.style.display = 'none';
-                      e.target.nextSibling.style.display = 'flex';
-                    }}
-                  />
-                  <div className="review-image-fallback" style={{display: 'none'}}>
-                    {r.name.charAt(0)}
-                  </div>
-                  <div className="review-image-overlay">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                      <path d="M12 2C13.1 2 14 2.9 14 4C14 5.1 13.1 6 12 6C10.9 6 10 5.1 10 4C10 2.9 10.9 2 12 2ZM21 9V7L15 1H5C3.89 1 3 1.89 3 3V21C3 22.1 3.89 23 5 23H19C20.1 23 21 22.1 21 21V9M19 9H14V4H19V9Z"/>
-                    </svg>
-                    <span>View</span>
-                  </div>
+        <div className="feedback-grid">
+          {currentImages.map((img, i) => (
+            <div 
+              key={i} 
+              className="feedback-card reveal reveal-scale"
+              onClick={() => openPopup(img)}
+            >
+              <div className="feedback-image-wrapper">
+                <img src={img} alt={`Feedback ${i + 1}`} className="feedback-img" />
+                <div className="feedback-overlay">
+                   <div className="view-icon">🔍</div>
+                   <span>View Feedback</span>
                 </div>
-              </article>
-            ))}
-          </div>
+              </div>
+            </div>
+          ))}
         </div>
 
-        {/* Popup Modal */}
+        {totalPages > 1 && (
+          <div className="pagination">
+            <button 
+              className={`page-btn ${currentPage === 1 ? 'disabled' : ''}`}
+              onClick={() => setCurrentPage(prev => Math.max(prev - 1, 1))}
+              disabled={currentPage === 1}
+            >
+              Previous
+            </button>
+            <div className="page-dots">
+              {Array.from({ length: totalPages }).map((_, i) => (
+                <span 
+                  key={i} 
+                  className={`page-dot ${currentPage === i + 1 ? 'active' : ''}`}
+                  onClick={() => setCurrentPage(i + 1)}
+                ></span>
+              ))}
+            </div>
+            <button 
+              className={`page-btn ${currentPage === totalPages ? 'disabled' : ''}`}
+              onClick={() => setCurrentPage(prev => Math.min(prev + 1, totalPages))}
+              disabled={currentPage === totalPages}
+            >
+              Next
+            </button>
+          </div>
+        )}
+
+        {/* Image Popup Modal */}
         {selectedImage && (
           <div className="image-popup-overlay" onClick={closePopup}>
             <div className="image-popup-content" onClick={(e) => e.stopPropagation()}>
-              <button className="image-popup-close" onClick={closePopup}>
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z"/>
-                </svg>
-              </button>
-              <div className="image-popup-image-container">
-                <img 
-                  src={selectedImage.image} 
-                  alt={`Client feedback from ${selectedImage.name}`}
-                  className="image-popup-image"
-                />
-              </div>
+              <button className="image-popup-close" onClick={closePopup}>×</button>
+              <img src={selectedImage} alt="Feedback Full" className="image-popup-full" />
             </div>
           </div>
         )}

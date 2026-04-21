@@ -20,7 +20,7 @@ export function Navigation() {
           <li><a href="#services" className="nav-link">Services</a></li>
           <li><a href="#stats" className="nav-link">About</a></li>
           <li><a href="#reviews" className="nav-link">Reviews</a></li>
-          <li><a href="#contact" className="nav-link">Contact</a></li>
+          <li><a href="#contact-section" className="nav-link">Contact</a></li>
         </ul>
         <div className="nav-actions">
           <button className="btn-primary nav-cta" onClick={handleGetQuote}>Get Quote</button>
