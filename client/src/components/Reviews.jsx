@@ -15,9 +15,9 @@ export function Reviews() {
   return (
     <section id="reviews">
       <div className="container">
-        <h1 style={{marginTop:0}}><center><b>Client Feedbacks</b></center></h1>
+        <h1 className="reveal reveal-up"><center><b>Client Feedbacks</b></center></h1>
         
-        <div className="reviews-scroll-container" style={{marginTop:'2rem'}}>
+        <div className="reviews-scroll-container reveal reveal-up delay-1">
           <div className="reviews-scroll-track">
             {[...reviews, ...reviews].map((r, index) => (
               <article key={`${r.id}-${index}`} className="review-card-scroll">

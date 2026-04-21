@@ -6,8 +6,10 @@ import { Reviews } from './components/Reviews.jsx';
 import { SiteFooter } from './components/SiteFooter.jsx';
 import { WhatsAppFloat } from './components/WhatsAppFloat.jsx';
 import { WelcomePopup } from './components/WelcomePopup.jsx';
+import { useReveal } from './hooks/useReveal.js';
 
 export default function App() {
+  useReveal();
   return (
     <>
       <Navigation />
