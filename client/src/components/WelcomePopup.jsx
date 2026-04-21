@@ -42,7 +42,7 @@ export function WelcomePopup() {
                         Explore our premium writing services and let us handle the stress for you.
                     </p>
                     <div className="welcome-popup-actions">
-                        <button className="btn-primary" onClick={handleClose} style={{ width: '100%', justifyContent: 'center' }}>
+                        <button className="btn-primary" onClick={handleClose}>
                             Get Started Now
                         </button>
                     </div>
