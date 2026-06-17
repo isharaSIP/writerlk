@@ -97,3 +97,39 @@ export const reviews = [
     project: 'Constitutional Law Essay'
   }
 ];
+
+export const portfolioItems = [
+  {
+    id: 1,
+    title: "Assignments",
+    category: "assignments",
+    desc: "Reliable assignment help with clear, well-structured, and original content tailored to your needs.",
+    image: "/work-assignment-1.png",
+    details: "Written with strict adherence to academic writing standards. Features a robust bibliography, clear thesis statement, and logical section transitions."
+  },
+  {
+    id: 2,
+    title: "Type Settings",
+    category: "type-settings",
+    desc: "Fast and accurate Sinhala and English typing with clean, professional formatting.",
+    image: "/work-typesetting-1.png",
+    details: "Typed with standard Sinhala unicode. Properly formatted layout, tables, and headers for official use."
+  },
+  {
+    id: 3,
+    title: "Presentations",
+    category: "presentations",
+    desc: "Modern, attractive presentations designed to communicate your message effectively.",
+    image: "/work-presentation-1.png",
+    details: "Designed with modern infographics, harmonious color palettes, clear font hierarchy, and a clean professional template."
+  },
+  {
+    id: 4,
+    title: "Professional CV",
+    category: "cvs",
+    desc: "Neatly designed CVs that highlight your skills and help you make a strong impression.",
+    image: "/work-cv-1.png",
+    details: "Designed using premium typography layout, structured experience timeline, clean skill charts, and high visual appeal."
+  }
+];
+
