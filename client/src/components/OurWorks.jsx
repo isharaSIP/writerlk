@@ -10,7 +10,8 @@ export function OurWorks() {
     { id: 'assignments', label: 'Assignments' },
     { id: 'type-settings', label: 'Type Settings' },
     { id: 'presentations', label: 'Presentations' },
-    { id: 'cvs', label: 'CVs' }
+    { id: 'cvs', label: 'CVs' },
+    { id: 'web-development', label: 'Web Development' }
   ];
 
   const getCategoryLabel = (category) => {
@@ -18,7 +19,8 @@ export function OurWorks() {
       'assignments': 'Assignment',
       'type-settings': 'Type Setting',
       'presentations': 'Presentation',
-      'cvs': 'CV'
+      'cvs': 'CV',
+      'web-development': 'Web Development'
     };
     return labels[category] || category;
   };
@@ -134,7 +136,7 @@ export function OurWorks() {
                       <svg className="modal-feature-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3.5" strokeLinecap="round" strokeLinejoin="round">
                         <polyline points="20 6 9 17 4 12" />
                       </svg>
-                      <span>Professional Writers</span>
+                      <span>Professional Team</span>
                     </div>
                     <div className="work-modal-feature-item">
                       <svg className="modal-feature-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3.5" strokeLinecap="round" strokeLinejoin="round">

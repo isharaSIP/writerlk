@@ -25,12 +25,13 @@ export function SiteFooter() {
             </div>
           </div>
           <div>
-            <h3>Our Works</h3>
+            <h3>Our Services</h3>
             <div className="footer-links">
               <a href="#our-works">Assignments</a>
               <a href="#our-works">Presentations</a>
               <a href="#our-works">Professional CV</a>
               <a href="#our-works">Type Settings</a>
+              <a href="#our-works">Web Development</a>
             </div>
           </div>
           <div>
@@ -60,7 +61,7 @@ export function SiteFooter() {
             </div>
           </div>
         </div>
-        <div className="copyright">© {new Date().getFullYear()} WriterLK. All rights reserved. Developed by Ishara Senarath</div>
+        <div className="copyright">© {new Date().getFullYear()} WriterLK. All rights reserved.</div>
       </div>
     </footer>
   );

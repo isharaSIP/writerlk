@@ -130,6 +130,14 @@ export const portfolioItems = [
     desc: "Neatly designed CVs that highlight your skills and help you make a strong impression.",
     image: "/work-cv-1.png",
     details: "Designed using premium typography layout, structured experience timeline, clean skill charts, and high visual appeal."
+  },
+  {
+    id: 5,
+    title: "Web Development",
+    category: "web-development",
+    desc: "Modern, fast, and responsive websites customized to grow your digital presence.",
+    image: "/work-web-1.jpg",
+    details: "Built using clean styling, responsive frameworks, fast search optimization, and modern aesthetic standards."
   }
 ];
 
