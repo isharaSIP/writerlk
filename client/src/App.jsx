@@ -1,6 +1,6 @@
 import { Navigation } from './components/Navigation.jsx';
 import { Hero } from './components/Hero.jsx';
-import { Services } from './components/Services.jsx';
+import { OurWorks } from './components/OurWorks.jsx';
 import { Stats } from './components/Stats.jsx';
 import { Reviews } from './components/Reviews.jsx';
 import { ContactSection } from './components/ContactSection.jsx';
@@ -15,7 +15,7 @@ export default function App() {
     <>
       <Navigation />
       <Hero />
-      <Services />
+      <OurWorks />
       <Stats />
       <Reviews />
       <ContactSection />

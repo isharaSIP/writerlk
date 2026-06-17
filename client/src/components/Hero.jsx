@@ -29,10 +29,6 @@ export function Hero() {
       </div>
       <div className="container hero-content">
         <div className="hero-main">
-          <div className="hero-badge animate-fade-in" style={{animationDelay: '0.2s'}}>
-            <span className="hero-badge-icon">✨</span>
-            <span>Premium Academic Writing Services</span>
-          </div>
           <h1 className="hero-title animate-fade-in-up" style={{animationDelay: '0.4s'}}>
             Transform Your
             <span className="hero-title-accent"> Academic Journey</span>

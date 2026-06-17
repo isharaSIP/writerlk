@@ -12,12 +12,12 @@ export function Navigation() {
         <div className="nav-brand">
           <a href="#home" className="brand-link">
             <img src="/logo1.png" alt="Writer.lk Logo" className="nav-logo" />
-            Writer.lk
+            WriterLK
           </a>
         </div>
         <ul className="nav-menu">
           <li><a href="#home" className="nav-link">Home</a></li>
-          <li><a href="#services" className="nav-link">Services</a></li>
+          <li><a href="#our-works" className="nav-link">Services</a></li>
           <li><a href="#stats" className="nav-link">About</a></li>
           <li><a href="#reviews" className="nav-link">Reviews</a></li>
           <li><a href="#contact-section" className="nav-link">Contact</a></li>

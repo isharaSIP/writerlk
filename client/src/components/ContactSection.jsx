@@ -53,10 +53,6 @@ export function ContactSection() {
              {/* Dynamic decorative element */}
              <div className="contact-blob"></div>
              <div className="contact-blob-2"></div>
-             <div className="contact-card-floating">
-                <span className="floating-badge">Trusted by 1000+ Students</span>
-                <div className="floating-icon-wrap">✍️</div>
-             </div>
           </div>
         </div>
       </div>
