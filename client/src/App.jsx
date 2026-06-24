@@ -8,7 +8,7 @@ import { SiteFooter } from './components/SiteFooter.jsx';
 import { WhatsAppFloat } from './components/WhatsAppFloat.jsx';
 import { WelcomePopup } from './components/WelcomePopup.jsx';
 import { useReveal } from './hooks/useReveal.js';
-import { Analytics } from "@vercel/analytics/next";
+import { Analytics } from '@vercel/analytics/react';
 
 export default function App() {
   useReveal();
@@ -23,6 +23,7 @@ export default function App() {
       <SiteFooter />
       <WhatsAppFloat />
       <WelcomePopup />
+      <Analytics />
     </>
   );
 }
