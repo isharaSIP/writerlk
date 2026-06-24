@@ -1,10 +1,17 @@
 {
   "name": "writerlk",
   "private": true,
-  "workspaces": ["server", "client", "shared"],
+  "workspaces": [
+    "server",
+    "client",
+    "shared"
+  ],
   "scripts": {
     "server": "npm run -w server dev",
     "client": "npm run -w client dev",
     "start": "npm run -w server dev"
+  },
+  "dependencies": {
+    "@vercel/analytics": "^2.0.1"
   }
 }
