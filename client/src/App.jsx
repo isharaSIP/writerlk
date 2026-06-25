@@ -22,7 +22,7 @@ export default function App() {
       <ContactSection />
       <SiteFooter />
       <WhatsAppFloat />
-      <WelcomePopup />
+      {/* <WelcomePopup /> */}
       <Analytics />
     </>
   );
